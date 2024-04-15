@@ -10,7 +10,11 @@
     <header>
         <h1>Meeting Minutes</h1>
         <h2>Meeting title: How to get into the Fate Series</h2>
-        <h3>Context: </h3><a href="https://typemoon.fandom.com/wiki/Fate_series">https://typemoon.fandom.com/wiki/Fate_series</a>
+        <nav>
+          <a href="https://en.wikipedia.org/wiki/Fate/stay_night" target="_blank">Wikipedia</a> |
+          <a href="https://typemoon.fandom.com/wiki/Fate_series" target="_blank">Fandom</a> |
+          <a href="https://tvtropes.org/pmwiki/pmwiki.php/Franchise/FateSeries" target="_blank">TV Tropes</a>
+        </nav>
         <hr>
     </header>
     <main>
@@ -23,17 +27,85 @@
         </ul>
       </section>
 
-      <h4>Recommended Start</h4>
+      <h4><strong>Recommended Start Order</strong></h4>
       <ol>
-        <li>Fate/Stay Night - Visual Novel</li>
-        <li>Fate/Hollow Ataraxia - Visual Novel</li>
+        <li>Fate/Stay Night - <em>Visual Novel</em></li>
+        <li>Fate/Hollow Ataraxia - <em>Visual Novel</em></li>
         <li>Fate Zero</li>
-        <li>Any of the animes</li>
+        <li>Any of the animes afterward</li>
       </ol>
-      <p>Below lists our recommended order to which one could start the <i>Fate Franchise</i></p>
+      <details>
+        <summary>Fate Series</summary>
+        <p>Fate is an Urban Fantasy action franchise, part of the greater Nasuverse created by Nasu Kinoko and Takeuchi Takashi. 
+          Originally just a series of self-contained material, the Fate franchise very quickly eclipsed the rest of Type-Moon's works 
+          and came into its own as a standalone series. - Excerpt taken from TV Tropes, linked above.</p>
+      </details>
+      <br>
+
+      <img src="images/imgNature.JPG" alt="Image atop a mountain" height="500">
+      <br>
+
+      <section>
+      <h3>Audio of a song I like: </h3>
+      <audio controls>
+        <source src="audio_video/subahibiSong.mp3">
+      </audio>
+      <br>
+
+      <h3>Live version of someone playing the same song on violin:</h3>
+      <video src="audio_video/subahibiSongVideo.mp4" controls height="300px"></video>
+      
+      <h4>Original video can be found here: </h4>
+      <a href="https://www.youtube.com/watch?v=5KIJK7b_ZmA" target="_blank">https://www.youtube.com/watch?v=5KIJK7b_ZmA</a>
+      </section>
+
+      <hr>
+
+      <h2>Forms for information</h2>
+      <form action="index.php">
+        <fieldset>
+          <label for="input =">input something:</label>
+          <input type="text">
+          <br>
+          <label for="input">Click here:</label>
+          <input type="checkbox">
+          <label for="input">Or click here:</label>
+          <input type="radio">
+          <br>
+          <label for="input">Enter your birthday:</label>
+          <input type="date">
+          <br>
+
+          <label for="Emotion">How are you feeling?: </label>
+          <select id="Emotion">
+            <option value="Happy">Happy</option>
+            <option value="Sad">Sad</option>
+          </select>
+          <br>
+
+          <label for="year">School year:</label>
+          <input list="year" id="schoolYear" name="schoolYear" />
+          <datalist id="year">
+            <option value="Not a student"></option>
+            <option value="1st-year"></option>
+            <option value="2nd-year"></option>
+            <option value="3rd-year"></option>
+            <option value="4th-year"></option>
+            <option value="Graduate student"></option>
+          </datalist>
+          <br>
+
+          <button type="button">Click here</button>
+          <br>
+          <label for="story">Finish the story: </label>
+          <textarea id="story" name="story" rows="3" cols="40">Once upon a time...</textarea>
+          
+        </fieldset>
+      </form>
     </main>
     <footer>
         <h3><span>&#169;</span> Fake Company Copyright</h3>
+        <h3>Created by Patric Sanchez</h3>
     </footer>
   </body>
 </html>
