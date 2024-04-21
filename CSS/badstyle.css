@@ -1,0 +1,46 @@
+body {
+    /*General background color */
+    background-color: #fff8dc;
+}
+
+h4	{
+    font-family: Helvetica, sans-serif;
+   }
+
+a:link {
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:visited { 
+    text-decoration: none; 
+    color: #0492C2;
+   }
+
+p {
+	font-size:15px;
+	font-family: Georgia,Times,Times New Roman,serif; 
+    
+}
+   
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+img	{
+	float:left;
+	padding:50px;
+	}
+
+div.second-list {
+    text-decoration:wavy;
+}
+
+/* Forms section at the bottom of the page*/
+div.forms {
+    padding-top: 100px;
+    text-align: center;
+}
