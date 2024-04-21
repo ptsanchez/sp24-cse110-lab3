@@ -1,20 +1,16 @@
+/*Internal CSS used for simple link styling*/
+
+:root {
+    --bg: #fff8dc; 
+}
+
 body {
-    /*General background color */
-    background-color: #fff8dc;
+    /*General background color - Example of using CSS variable*/
+    background-color: var(--bg);
 }
 
 h4	{
     font-family: Helvetica, sans-serif;
-   }
-
-a:link {
-    background-color: transparent;
-    text-decoration: none;
-  }
-
-a:visited { 
-    text-decoration: none; 
-    color: #0492C2;
    }
 
 p {
@@ -30,17 +26,35 @@ ul {
     overflow: hidden;
 }
 
+/* Styling for Footer Image*/
 img	{
 	float:left;
-	padding:50px;
-	}
+	padding:1.3cm; /*Absolute Unit 2*/
+}
 
 div.second-list {
     text-decoration:wavy;
+    max-width: 10in; 
+}
+
+span{
+    font-size: 1.5em; /*Relative Unit 1*/
+}
+
+div.top {
+    text-align: center;
 }
 
 /* Forms section at the bottom of the page*/
 div.forms {
+    color: hsl(0, 0%, 6%);
+    max-height: 2.6in; /*Absolute Unit 3*/
     padding-top: 100px;
     text-align: center;
+}
+
+/*Child div of div.forms, used for relative units*/
+div.textbox {
+    padding-block: 0%; /*Relative Unit 2*/
+    height: 0.1rem; /*Relative Unit 3*/ 
 }

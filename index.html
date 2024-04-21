@@ -6,9 +6,20 @@
     <meta name="author" content="Patric Sanchez">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="CSS/badstyle.css">
+    <style>
+      a:link {
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited { 
+        text-decoration: none; 
+        color: #0492C2;
+      }
+    </style>
   </head>
   <body>
     <header>
+      <div class="top">
         <h1>Meeting Minutes</h1>
         <h2>Meeting title: How to get into the Fate Series</h2>
         <nav>
@@ -16,6 +27,7 @@
           <a href="https://typemoon.fandom.com/wiki/Fate_series" target="_blank">Fandom</a> |
           <a href="https://tvtropes.org/pmwiki/pmwiki.php/Franchise/FateSeries" target="_blank">TV Tropes</a>
         </nav>
+      </div>
         <hr>
     </header>
     <main>
@@ -46,7 +58,6 @@
     </div>
       <br>
 
-      
       <br>
 
       <section>
@@ -66,11 +77,13 @@
       </section>
 
       <div class="forms">
-      <h2>Forms for information</h2>
+      <h2 style="color: hsl(176, 29%, 23%);">Forms for information</h2>
       <form action="index.php">
         <fieldset>
-          <label for="Textbox">input something:</label>
+          <div class="textbox">
+          <label for="Textbox">Write something:</label>
           <input id="Textbox" type="text">
+          </div>
           <br>
           <label for="Click">Click here:</label>
           <input id="Click" type="checkbox">
@@ -100,18 +113,20 @@
           </datalist>
           <br>
 
+          <span>
           <button type="button">Click here</button>
           <br>
           <label for="story">Finish the story: </label>
           <textarea id="story" name="story" rows="3" cols="40">Once upon a time...</textarea>
-          
+        </span>
+
         </fieldset>
       </form>
     </div>
     </main>
     <footer>
-        <h3><span>&#169;</span> Fake Company Copyright</h3>
-        <h3>Created by Patric Sanchez for CSE 110 @ UCSD</h3>
+        <h3 style="color: color(display-p3 1 0 0.331);"><span>&#169;</span> Fake Company Copyright</h3>
+        <h3 style="color: color-mix(in lch, plum 40%, pink);">Created by Patric Sanchez for CSE 110 @ UCSD</h3>
     </footer>
   </body>
 </html>
