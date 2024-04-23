@@ -17,7 +17,37 @@ body {
     background-color: var(--bg);
 }
 
-h4	{
+a[href="https://www.youtube.com/watch?v=5KIJK7b_ZmA"] {
+    color: blue;
+}
+
+div.forms h2 {
+    color: hsl(176, 29%, 23%);
+    font-family: serif;
+}
+
+div.top > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div + p {
+   font-size: large;
+}
+
+div ~ p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.header h3 {
+    background-color: yellow;
+}
+
+.center {
+    text-align: center;
+    list-style-position: inside;
+  }
+
+h3, h4	{
     font-family: Helvetica, sans-serif;
    }
 
@@ -36,15 +66,13 @@ ul {
 
 /* Styling for Footer Image*/
 img	{
-	float:left;
-	padding:1.3cm; /*Absolute Unit 2*/
-    width: auto;
-    
+    padding:1.3cm; /*Absolute Unit 2*/
+    width: auto; 
 }
 
 div.second-list {
     text-decoration:wavy;
-    max-width: 10in; 
+    
 }
 
 span{
@@ -63,16 +91,14 @@ div.top {
 }
 
 /* Forms section at the bottom of the page. Flex container*/
-div.forms {
+.forms {
     position: relative;
     color: hsl(0, 0%, 6%);
     max-height: 2.6in; /*Absolute Unit 3*/
     padding-top: 100px;
-    text-align: center;
     border-radius: 10px;
     border-style: none;
     padding-bottom: 50px;
-    margin-right: 50%;
 
     display: flex;
     flex-direction: row;
@@ -92,9 +118,18 @@ div.textbox {
     height: 0.1rem; /*Relative Unit 3*/ 
 }
 
+* {
+    text-align: center;
+}
+
+#copyright {
+    color: color(display-p3 1 0 0.331);
+}
+
 div.footer {
-    padding: 25px, 50px, 75px, 100px; 
-    margin: 25px, 50px, 75px, 100px;
+    float: right;
+    padding: 25px  25px  25px  25px; 
+    margin: 25px 50px 75px 100px;
 }
 
 @media (max-width: 1250px) {
@@ -102,4 +137,13 @@ div.footer {
     div.links a::after {
         font-size: 2.5em; 
     }
+}
+
+.container .highlight {
+    font-family: cursive;
+}
+
+div:has(p) {
+    /* Your styles here */
+    font-size: large;
 }
