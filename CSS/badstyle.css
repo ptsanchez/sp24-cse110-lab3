@@ -4,6 +4,14 @@
     --bg: #fff8dc; 
 }
 
+.monsieur-la-doulaise-regular {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+  }
+  
+
 body {
     /*General background color - Example of using CSS variable*/
     background-color: var(--bg);
@@ -21,7 +29,7 @@ p {
    
 ul {
     list-style-type: none;
-    margin: 0;
+   
     padding: 20px;
     overflow: hidden;
 }
@@ -30,6 +38,8 @@ ul {
 img	{
 	float:left;
 	padding:1.3cm; /*Absolute Unit 2*/
+    width: auto;
+    
 }
 
 div.second-list {
@@ -41,20 +51,55 @@ span{
     font-size: 1.5em; /*Relative Unit 1*/
 }
 
-div.top {
-    text-align: center;
+button:hover {
+    color:darksalmon;
 }
 
-/* Forms section at the bottom of the page*/
+div.top {
+    text-align: center;
+    display: inline;
+    position: static;
+    margin: auto;
+}
+
+/* Forms section at the bottom of the page. Flex container*/
 div.forms {
+    position: relative;
     color: hsl(0, 0%, 6%);
     max-height: 2.6in; /*Absolute Unit 3*/
     padding-top: 100px;
     text-align: center;
+    border-radius: 10px;
+    border-style: none;
+    padding-bottom: 50px;
+    margin-right: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    align-items: center; 
 }
+
 
 /*Child div of div.forms, used for relative units*/
 div.textbox {
     padding-block: 0%; /*Relative Unit 2*/
     height: 0.1rem; /*Relative Unit 3*/ 
+}
+
+div.footer {
+    padding: 25px, 50px, 75px, 100px; 
+    margin: 25px, 50px, 75px, 100px;
+}
+
+@media (max-width: 1250px) {
+    div.links a,
+    div.links a::after {
+        font-size: 2.5em; 
+    }
 }

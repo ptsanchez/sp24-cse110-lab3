@@ -15,18 +15,26 @@
         text-decoration: none; 
         color: #0492C2;
       }
+      a:active {
+        background: gray; 
+      }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="top">
         <h1>Meeting Minutes</h1>
         <h2>Meeting title: How to get into the Fate Series</h2>
+        <div class="links">
         <nav>
           <a href="https://en.wikipedia.org/wiki/Fate/stay_night" target="_blank">Wikipedia</a> |
           <a href="https://typemoon.fandom.com/wiki/Fate_series" target="_blank">Fandom</a> |
           <a href="https://tvtropes.org/pmwiki/pmwiki.php/Franchise/FateSeries" target="_blank">TV Tropes</a>
         </nav>
+      </div>
       </div>
         <hr>
     </header>
@@ -62,13 +70,13 @@
 
       <section>
       <h3>Audio of a song I like: </h3>
-      <audio controls>
+      <audio controls muted>
         <source src="audio_video/subahibiSong.mp3">
       </audio>
       <br>
 
       <h3>Live version of someone playing the same song on violin:</h3>
-      <video src="audio_video/subahibiSongVideo.mp4" controls height="300"></video>
+      <video src="audio_video/subahibiSongVideo.mp4" controls muted height="300"></video>
       
       <p><b>Original video can be found here:</b></p>
       <a href="https://www.youtube.com/watch?v=5KIJK7b_ZmA" target="_blank">https://www.youtube.com/watch?v=5KIJK7b_ZmA</a>
@@ -76,8 +84,8 @@
       <img src="images/imgNature.JPG" alt="Image atop a mountain" height="500">
       </section>
 
-      <div class="forms">
-      <h2 style="color: hsl(176, 29%, 23%);">Forms for information</h2>
+      <div class="forms"> 
+      <h2 style="color: hsl(176, 29%, 23%);">Forms for information: </h2> 
       <form action="index.php">
         <fieldset>
           <div class="textbox">
@@ -85,22 +93,28 @@
           <input id="Textbox" type="text">
           </div>
           <br>
+        <div>
           <label for="Click">Click here:</label>
           <input id="Click" type="checkbox">
-          <label for="radio">Or click here:</label>
+        </div>
+        <div>
+        <label for="radio">Or click here:</label>
           <input id="radio" type="radio">
-          <br>
+        </div>
+          <div>
           <label for="Birthday">Enter your birthday:</label>
           <input id="Birthday" type="date">
-          <br>
+        </div>
 
+        <div>
           <label for="Emotion">How are you feeling?: </label>
           <select id="Emotion">
             <option value="Happy">Happy</option>
             <option value="Sad">Sad</option>
           </select>
-          <br>
+        </div>
 
+        <div class="dropdown">
           <label for="School">School year:</label>
           <input id="School" list="year" name="schoolYear">
           <datalist id="year">
@@ -111,7 +125,7 @@
             <option value="4th year"></option>
             <option value="Graduate student"></option>
           </datalist>
-          <br>
+        </div>
 
           <span>
           <button type="button">Click here</button>
@@ -124,9 +138,11 @@
       </form>
     </div>
     </main>
+    <div class="footer">
     <footer>
         <h3 style="color: color(display-p3 1 0 0.331);"><span>&#169;</span> Fake Company Copyright</h3>
-        <h3 style="color: color-mix(in lch, plum 40%, pink);">Created by Patric Sanchez for CSE 110 @ UCSD</h3>
+        <h3 class="monsieur-la-doulaise-regular" style="color: color-mix(in lch, plum 40%, pink); margin-top: 20px;">Patric Sanchez</h3>
     </footer>
+  </div>
   </body>
 </html>
